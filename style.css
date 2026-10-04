@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+  --container-width: 600px;
+}
+
+
+
+body{
+  font-family: "Smythe", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button{
+  transition: filter 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover{
+  filter: brightness(80%);
+}
+
+.header{
+  width: var(--container-width);
+  height: 175px;
+  background-image: url('./imgs/header_bg.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 46px;
+}
+
+h1{
+  font-size: 39px;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-size: 23px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+
+.order-section {
+  padding-inline: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-block: 30px;
+}
+
+.dish{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: var(--container-width);
+  padding-bottom: 40px;
+  border-bottom: 2px solid #D2D2D2;
+}
+
+.dish-info{
+  display: flex;
+  align-items: center;
+}
+
+.dish-icon{
+  font-size: 70px;
+}
+
+h3{
+  font-size: 28px;
+}
+
+.dish p{
+  font-size: 16px;
+  color: #8B8B8B;
+  margin-block: 8px;
+}
+
+.dish-btn{
+  background-color: #fff;
+  border: 1px solid #DEDEDE;
+  color: #3C3C3C;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  margin-block: auto;
+}
+
+.cart{
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 23px;
+}
+
+.cart h2{
+  font-size: 25px;
+}
+
+.cart-dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #393333;
+}
+
+.cart-dish{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-dish-container{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cart-dish-btn{
+  background-color: transparent;
+  border: none;
+  color: #BBBBBB;
+  margin-top: 3px;
+}
+
+.total{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#complete-btn{
+  color: #fff;
+  background-color: #16DB99;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  border: none;
+  margin-top: 20px;
+}
+
+.thanks{
+  display: none;
+  background-color: #ECFDF5;
+  color: #065F46;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-inline: 25px;
+  border-radius: 5px;
+}
+
+#payment-modal{
+  width: 325px;
+  height: 350px;
+  border: none;
+  border-radius: 5px;
+}
+
+#payment-form{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#payment-form h2{
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+#payment-form input{
+  height: 40px;
+  font-size: 15px;
+  padding-inline: 15px;
+}
+
+#payment-form button{
+  display: inline-block;
+  background-color: #16DB99;
+  color: #fff;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+}

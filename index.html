@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Jimmy’s Diner</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-text">
+      <h1>Jimmy’s Diner</h1>
+      <h2>The best burgers and pizzas in town.</h2>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="order-section" id="order-section">
+    </section>
+    <section class="cart" id="cart">
+      <h2>Your order</h2>
+      <div class="cart-dishes" id="cart-dishes">
+        <div class="cart-dish">
+          <div class="cart-dish-container">
+            <p class="cart-dish-name">Pizza</p>
+            <button class="cart-dish-btn">remove</button>
+          </div>
+          <p>$14</p>
+        </div>
+      </div>
+      <div class="total">
+        <h2>Total price:</h2>
+        <p id="cart-total"></p>
+      </div>
+      <button id="complete-btn">Complete order</button>
+    </section>
+    <section class="thanks" id="thanks">
+      <p id="thanks-text"></p>
+    </section>
+  </main>
+
+  <dialog id="payment-modal">
+    <form method="dialog" id="payment-form">
+      <h2>Enter card details</h2>
+
+      <div class="input-container">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="text" name="card" placeholder="Enter card number" required>
+        <input type="text" name="cvv" placeholder="Enter CVV" required>
+      </div>
+
+      <button type="submit">Pay</button>
+    </form>
+  </dialog>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
